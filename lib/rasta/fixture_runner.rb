@@ -43,7 +43,7 @@ module Rasta
     end
 
     def do_require(filename)
-      raise LoadError, "Unable to require file '#{filename}'" unless require filename
+      require filename
     end
     private :do_require
       
